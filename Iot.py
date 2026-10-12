@@ -3,9 +3,11 @@ class ChytreZarizeni:
           self.nazev = nazev
           self.mistnost = mistnost
           self.zapnuto = zapnuto
-          pass
+          
      def prepni_stav(self):
-        return f"Zařizení je {self.zapnuto}"
+        self.zapnuto = not self.zapnuto
+        stav_text = "zapnuto" if self.zapnuto else "vypnuto"
+        return f"Zařizení {self.zapnuto} je {stav_text}"
      
      def proved_akci(self):
           return f"Zařizení čeká na přikaz"
@@ -17,7 +19,7 @@ class ChytraZarovka(ChytreZarizeni):
           self.barva = barva
 
      def proved_akci(self):
-          if ({self.zapnuto} == False):
+          if self.zapnuto:
                return f"{self.nazev} svítí barvou {self.barva}"
           else:
                return f"Je zhasnuto"
