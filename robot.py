@@ -17,5 +17,4 @@ class Robot:
         return f"Mám ted nové zadání, {self.nUkol}"    
 
 robot = Robot("RoboSport", 55)
-print(self.zvuk())    
-
+print(self.zvuk())  
