@@ -31,7 +31,7 @@ class Animal:
         if self.chekcupYear < datetime.now().year:
             return f"{self.species} {self.name} musí k veterináři - platnost prohlídky skončila v roce {self.chekcupYear}"
         else:
-            rozdil = self.chekcupYear - 
+            rozdil = self.chekcupYear 
             return f""
 
 zviratko = Animal("Pes", "Domestos", 2015) 

@@ -66,7 +66,7 @@ class Garage:
 
     def addCar (self, car:Car):
         self.cars.append(car)
-        return f"Do daraže {self.name} bylo přidáno auto: {car.brand} {car.model}"
+        return f"Do garaže {self.name} bylo přidáno auto: {car.brand} {car.model}"
     
     def showCars(self):
         if len(self.cars) == 0:
